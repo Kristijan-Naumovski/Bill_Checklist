@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monthly Bills Checklist</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <h1>💸 Monthly Bills</h1>
+
+  <div class="app">
+    <div class="panel">
+      <div id="calendar"></div>
+    </div>
+    <div class="side">
+      <div class="panel">
+        <form id="bill-form">
+          <input type="text" id="bill-name" placeholder="Bill name" required />
+          <input type="number" id="bill-day" placeholder="Due day" min="1" max="31" required />
+          <button type="submit">Add</button>
+        </form>
+
+        <ul id="bill-list"></ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
